@@ -38,7 +38,7 @@ class Book(Base):
         Integer, ForeignKey('categories.id'), nullable=True
     )
 
-    category: Mapped['Category | None'] = relationship(
+    category: Mapped['Category | None'] = relationship(  # type: ignore
         'Category', back_populates='books'
     )
 

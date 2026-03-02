@@ -2,6 +2,7 @@ from sqlalchemy import Integer, String
 from sqlalchemy.orm import Mapped, MappedColumn, relationship
 
 from src.scrape_to_api.db.base import Base
+from src.scrape_to_api.models.book import Book
 
 
 class Category(Base):
