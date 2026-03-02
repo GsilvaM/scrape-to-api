@@ -21,6 +21,9 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "scrape_to_api", from = "src"}]
 
+[tool.poetry.dependencies]
+pycparser = "2.22"
+
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.15.4"
