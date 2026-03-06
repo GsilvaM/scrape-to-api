@@ -4,6 +4,8 @@
 # Variáveis de ambiente
 .env
 
+src/scrape_to_api/settings/
+
 # Python
 __pycache__/
 *.py[cod]
