@@ -1,4 +1,4 @@
-# Book Scraper — Fullstack
+# Scrape-to-API — Fullstack
 
 Aplicação fullstack para coleta, armazenamento e visualização de livros via web scraping.
 
