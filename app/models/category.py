@@ -1,0 +1,18 @@
+from sqlalchemy import Integer, String
+from sqlalchemy.orm import Mapped, MappedColumn, relationship
+
+from app.db.base import Base
+
+
+class Category(Base):
+    __tablename__ = 'categories'
+
+    id: Mapped[int] = MappedColumn(
+        Integer, primary_key=True, autoincrement=True
+    )
+
+    name: Mapped[str] = MappedColumn(String(100), unique=True, nullable=False)
+
+    books: Mapped[list['Book']] = relationship(  # pyright: ignore[reportUndefinedVariable]
+        'Book', back_populates='category'
+    )
