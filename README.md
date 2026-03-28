@@ -89,8 +89,8 @@ scraper-to-API/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/book-scraper.git
-cd book-scraper
+git clone https://github.com/GsilvaM/book-scraper.git
+cd scrape-to-API
 ```
 
 ### 2. Configure o banco de dados
@@ -98,7 +98,7 @@ cd book-scraper
 Crie o banco no MySQL:
 
 ```sql
-CREATE DATABASE book_scraper CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE books CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 ### 3. Backend
@@ -112,7 +112,7 @@ poetry install
 Configure as variáveis de ambiente em `app/settings/db_config.py` ou via `.env`:
 
 ```env
-DATABASE_URL=mysql+pymysql://usuario:senha@localhost:3306/book_scraper
+DATABASE_URL=mysql+pymysql://usuario:senha@localhost:3306/books
 ```
 
 Inicie o servidor:
