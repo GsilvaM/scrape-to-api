@@ -23,7 +23,7 @@ O backend realiza o scraping, persiste os dados em banco relacional e os expõe 
 ## Estrutura do projeto
 
 ```
-book-scraper/
+scraper-to-API/
 ├── app/
 │   ├── api/
 │   │   └── books_router.py         # Rotas FastAPI
